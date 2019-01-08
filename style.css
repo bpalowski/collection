@@ -1,0 +1,13 @@
+body {
+  background-image: url("img/firstPicture.jpg");
+  background-size: cover;
+  background-position: block;
+}
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 100px;
+  font-family: "Bangers", cursive;
+  background-color: dodgerblue;
+  padding: 5%;
+}
