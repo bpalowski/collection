@@ -1,5 +1,8 @@
-// document.get;
 
+const first =  document.querySelector('#addTask');// document.get;
+first.addEventListener("click", function(){
+  alert("hello");
+})
 // alert("hello");
 // let ar = ["lets", "practice", "working", "with", "algorithms"];
 
