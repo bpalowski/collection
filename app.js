@@ -5,25 +5,20 @@ const strInput = document.getElementById('input1');
 
 first.addEventListener("click", function(e){
   let arr = [];
-  let newArr = [];
   let con = strInput.value;
   arr.push(con);
 
-  console.log(typeof con);
-  console.log( con);
-  console.log( arr);
+  for(let i=0; i<arr.length; i++){
+  let newArr = arr[i].split(" ");
+    console.log(newArr);
 
-  for(i=0; i<arr.length; i++){
-    let newStr = arr[i].split(" ");
-    console.log(arr[i]);
-    console.log(newStr);
-    console.log(newStr.length);
+    for(let x=0; x<newArr.length; x++){
+      if(newArr[x].length >= 3){
+        console.log(newArr[x]);
+      }
+    }
 
   }
-
-
-
-
   e.preventDefault();
 
 });
