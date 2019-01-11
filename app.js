@@ -1,27 +1,29 @@
-
 const first =  document.getElementById('addTask');
 
 const strInput = document.getElementById('input1');
 
 first.addEventListener("click", function(e){
   let arr = [];
+  let test;
+  let newArr = [];
   let con = strInput.value;
   arr.push(con);
 
   for(let i=0; i<arr.length; i++){
-  let newArr = arr[i].split(" ");
-    console.log(newArr);
+     test =  arr[i].split(" ");
 
-    for(let x=0; x<newArr.length; x++){
-      if(newArr[x].length >= 3){
-        console.log(newArr[x]);
-      }
-    }
+    for(let x=0; x<test.length; x++){
+      if (test[x].length >= 3) {
+           newArr.push(test[x]);
+         }
 
   }
+    console.log(newArr);
   e.preventDefault();
 
+}
 });
+
 
 
 // let ar = ["lets", "practice", "working", "with", "algorithms"];
