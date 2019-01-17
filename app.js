@@ -2,8 +2,7 @@ const first =  document.getElementById('addTask');
 
 const strInput = document.getElementById('input1');
 
-const message = document.getElementById('input2');
-message.innerHTML ="hello";
+const message = document.getElementById('message');
 
 first.addEventListener("click", function(e){
   let arr = [];
@@ -19,13 +18,9 @@ first.addEventListener("click", function(e){
       if (test[x].length >= 3) {
            newArr.push(test[x]);
          }
-
   }
-    console.log(newArr);
-    setMessage(`${newArr}`);
 e.preventDefault();
 
-
 }
-
+  return  message.innerHTML= newArr;
 });
